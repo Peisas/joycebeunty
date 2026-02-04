@@ -6,21 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beauty & Shine Studio | Joyce Fernandes</title>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<link rel="stylesheet" href="style/style.css">
 
-/* ===== BODY ===== */
+<style>
+/* ===== SOBRESCREVE ALGUNS ESTILOS PARA MODO ESCURO E LOGO CENTRALIZADA ===== */
+
 body {
-  font-family: 'Poppins', sans-serif;
   background: #0f0f0f;
   color: #eaeaea;
 }
 
-/* ===== HEADER ===== */
 .studio-header {
   display: flex;
   flex-direction: column;
@@ -46,150 +41,6 @@ body {
   font-size: 28px;
   color: #ffffff;
   letter-spacing: 1px;
-}
-
-/* ===== HERO ===== */
-.hero {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: center;
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-.hero img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.hero-content h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  margin-bottom: 15px;
-  color: #ffffff;
-}
-
-.hero-content p {
-  line-height: 1.8;
-  margin-bottom: 25px;
-  color: #cfcfcf;
-}
-
-/* ===== BOTÕES ===== */
-.btn {
-  display: inline-block;
-  padding: 14px 28px;
-  background: #ffffff;
-  color: #000;
-  text-decoration: none;
-  border-radius: 40px;
-  transition: .3s ease;
-  font-weight: 500;
-}
-
-.btn:hover {
-  background: #d1d1d1;
-}
-
-/* ===== SEÇÕES ===== */
-section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 80px 20px;
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #ffffff;
-}
-
-/* ===== CARDS ===== */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.card {
-  background: #1a1a1a;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-  transition: transform .4s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}
-
-.card img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 20px;
-  text-align: center;
-}
-
-.card-content p {
-  color: #d6d6d6;
-}
-
-.price {
-  margin-top: 10px;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-/* ===== CONTATO ===== */
-.contact {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  align-items: center;
-}
-
-.contact img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.contact p {
-  color: #dcdcdc;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background: #000000;
-  color: #ffffff;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-/* ===== WHATSAPP ===== */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: #fff;
-  padding: 14px 22px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* ===== ANIMAÇÃO ===== */
-@keyframes fadeDown {
-  from {opacity: 0; transform: translateY(-20px);}
-  to {opacity: 1; transform: translateY(0);}
 }
 </style>
 </head>
@@ -220,7 +71,7 @@ footer {
   <h2>Especial de Carnaval</h2>
   <div class="cards">
     <div class="card">
-      <img src="carnaval1.jpg">
+      <img src="carnaval1.jpg" alt="Carnaval 1">
       <div class="card-content">
         <p>Maquiagem artística com brilho e resistência.</p>
         <p class="price">R$ 80,00 • 1h</p>
@@ -233,7 +84,7 @@ footer {
   <h2>Carnaval Kids</h2>
   <div class="cards">
     <div class="card">
-      <img src="premium1.jpg">
+      <img src="premium1.jpg" alt="Premium 1">
       <div class="card-content">
         <p>Maquiagem simples e elegante.</p>
         <p class="price">R$ 50,00 • 1h30</p>
@@ -241,7 +92,7 @@ footer {
     </div>
 
     <div class="card">
-      <img src="premium2.jpg">
+      <img src="premium2.jpg" alt="Premium 2">
       <div class="card-content">
         <p>Maquiagem lúdica e segura.</p>
       </div>
@@ -253,7 +104,7 @@ footer {
   <h2>Penteados</h2>
   <div class="cards">
     <div class="card">
-      <img src="penteado1.jpg">
+      <img src="penteado1.jpg" alt="Penteado 1">
       <div class="card-content">
         <p>Penteados modernos e clássicos.</p>
         <p class="price">R$ 80,00</p>
@@ -261,7 +112,7 @@ footer {
     </div>
 
     <div class="card">
-      <img src="penteado2.jpg">
+      <img src="penteado2.jpg" alt="Penteado 2">
       <div class="card-content">
         <p>Finalização elegante e durável.</p>
       </div>
@@ -273,7 +124,7 @@ footer {
   <h2>Premium</h2>
   <div class="cards">
     <div class="card">
-      <img src="kids1.jpg">
+      <img src="kids1.jpg" alt="Kids 1">
       <div class="card-content">
         <p>Produção sofisticada e impecável.</p>
         <p class="price">R$ 130,00 • 30 min</p>
@@ -286,7 +137,7 @@ footer {
   <h2>Maquiagem Social</h2>
   <div class="cards">
     <div class="card">
-      <img src="social1.jpg">
+      <img src="social1.jpg" alt="Social 1">
       <div class="card-content">
         <p>Eventos, festas e ensaios.</p>
         <p class="price">R$ 80,00 • 1h</p>
@@ -298,7 +149,7 @@ footer {
 <section>
   <h2>Contato</h2>
   <div class="contact">
-    <img src="contato.jpg">
+    <img src="contato.jpg" alt="Contato">
     <div>
       <p>📍 Rua São Pedro, Nº 101</p>
       <p>📲 WhatsApp: +55 84 9912-5959</p>
