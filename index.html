@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty & Shine Studio | Joyce Fernandes</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #000;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header img {
+  max-width: 180px;
+  animation: fadeIn 1.2s ease;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+p {
+  text-align: center;
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  border: 1px solid #000;
+  padding: 15px;
+  transition: transform .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  filter: grayscale(100%);
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="Beauty & Shine Studio">
+</header>
+
+<section>
+  <h2>APRESENTAÇÃO</h2>
+  <p>
+    Sou <strong>Joyce Fernandes</strong>, maquiadora profissional especializada em produções
+    elegantes, artísticas e personalizadas. Trabalho com carinho, técnica e produtos
+    de alta qualidade para realçar a sua beleza em cada detalhe.
+  </p>
+</section>
+
+<section>
+  <h2>ESPECIAL DE CARNAVAL</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="carnaval1.jpg" alt="Carnaval">
+      <p>Maquiagem artística PB com glitter e durabilidade.</p>
+      <p class="price">R$ 80,00 | 1h</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>ATENDIMENTO PREMIUM</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="premium1.jpg" alt="Premium">
+      <p>Produção sofisticada com acabamento impecável.</p>
+      <p class="price">R$ 120,00 | 1h30</p>
+    </div>
+
+    <div class="card">
+      <img src="premium2.jpg" alt="Premium">
+      <p>Elegância, definição e longa duração.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>MAQUIAGEM KIDS – CARNAVAL</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="kids1.jpg" alt="Kids">
+      <p>Maquiagem lúdica e segura para crianças.</p>
+      <p class="price">R$ 50,00 | 30 min</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>MAQUIAGEM SOCIAL</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="social1.jpg" alt="Social">
+      <p>Eventos, festas, aniversários e ensaios.</p>
+      <p class="price">R$ 80,00 | 1h</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>📍 Rua São Pedro, Nº 101</p>
+  <p>📲 WhatsApp: +55 84 9912-5959</p>
+  <p>📸 Instagram: @beautyshine.studio</p>
+  <br>
+  <p>Beauty & Shine Studio • Joyce Fernandes</p>
+</footer>
+
+</body>
+  </html>
