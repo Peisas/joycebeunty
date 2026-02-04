@@ -2,12 +2,9 @@
 <html lang="pt-BR">
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style/style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beauty & Shine Studio | Joyce Fernandes</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -18,10 +15,11 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f5f5f5;
-  color: #111;
+  background: #0f0f0f;
+  color: #eaeaea;
 }
 
+/* HEADER */
 header {
   text-align: center;
   padding: 40px 20px;
@@ -32,6 +30,7 @@ header img {
   animation: fadeDown 1.2s ease;
 }
 
+/* HERO */
 .hero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -51,27 +50,32 @@ header img {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   margin-bottom: 15px;
+  color: #ffffff;
 }
 
 .hero-content p {
   line-height: 1.8;
   margin-bottom: 25px;
+  color: #cfcfcf;
 }
 
+/* BOTÕES */
 .btn {
   display: inline-block;
   padding: 14px 28px;
-  background: #000;
-  color: #fff;
+  background: #ffffff;
+  color: #000;
   text-decoration: none;
   border-radius: 40px;
   transition: .3s ease;
+  font-weight: 500;
 }
 
 .btn:hover {
-  background: #333;
+  background: #d1d1d1;
 }
 
+/* SEÇÕES */
 section {
   max-width: 1200px;
   margin: auto;
@@ -83,8 +87,10 @@ h2 {
   text-align: center;
   font-size: 32px;
   margin-bottom: 40px;
+  color: #ffffff;
 }
 
+/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -92,10 +98,10 @@ h2 {
 }
 
 .card {
-  background: #fff;
+  background: #1a1a1a;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
   transition: transform .4s ease;
 }
 
@@ -114,11 +120,17 @@ h2 {
   text-align: center;
 }
 
+.card-content p {
+  color: #d6d6d6;
+}
+
 .price {
   margin-top: 10px;
   font-weight: 500;
+  color: #ffffff;
 }
 
+/* CONTATO */
 .contact {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -131,13 +143,19 @@ h2 {
   border-radius: 12px;
 }
 
+.contact p {
+  color: #dcdcdc;
+}
+
+/* FOOTER */
 footer {
-  background: #000;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
   text-align: center;
   padding: 50px 20px;
 }
 
+/* WHATSAPP */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -149,6 +167,8 @@ footer {
   text-decoration: none;
   font-weight: 500;
 }
+
+/* ANIMAÇÃO */
 @keyframes fadeDown {
   from {opacity: 0; transform: translateY(-20px);}
   to {opacity: 1; transform: translateY(0);}
@@ -196,7 +216,7 @@ footer {
     <div class="card">
       <img src="premium1.jpg">
       <div class="card-content">
-        <p>maquiagem simples e elegante.</p>
+        <p>Maquiagem simples e elegante.</p>
         <p class="price">R$ 50,00 • 1h30</p>
       </div>
     </div>
@@ -204,7 +224,7 @@ footer {
     <div class="card">
       <img src="premium2.jpg">
       <div class="card-content">
-        <p>Maquiagem lucida e segura.</p>
+        <p>Maquiagem lúdica e segura.</p>
       </div>
     </div>
   </div>
@@ -231,13 +251,12 @@ footer {
 </section>
 
 <section>
-  <h2>Premium </h2>
+  <h2>Premium</h2>
   <div class="cards">
     <div class="card">
       <img src="kids1.jpg">
       <div class="card-content">
-        <p>produção sofisticada e produção impecavel
-        .</p>
+        <p>Produção sofisticada e impecável.</p>
         <p class="price">R$ 130,00 • 30 min</p>
       </div>
     </div>
