@@ -1,158 +1,284 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beauty & Shine Studio | Joyce Fernandes</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+  color: #111;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header img {
+  max-width: 200px;
+  animation: fadeDown 1.2s ease;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: .3s ease;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: transform .4s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+
+.contact img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 500;
+}
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
 </head>
 
 <body>
 
-<!-- CONFETES -->
-<div class="confetti" style="left:10%"></div>
-<div class="confetti" style="left:30%"></div>
-<div class="confetti" style="left:50%"></div>
-<div class="confetti" style="left:70%"></div>
-<div class="confetti" style="left:90%"></div>
+<header>
+  <img src="logo.png" alt="Beauty & Shine Studio">
+</header>
 
-<!-- MENU -->
-<nav class="menu">
-  <img src="assets/logo.png" alt="Beauty & Shine Studio">
+<section class="hero">
+  <div class="hero-content">
+    <h1>Beauty & Shine Studio</h1>
+    <p>
+      Sou <strong>Joyce Fernandes</strong>, maquiadora profissional especializada
+      em produções elegantes, artísticas e personalizadas.
+      Realçando sua beleza com técnica, cuidado e estilo.
+    </p>
+    <a class="btn" href="https://wa.me/558499125959" target="_blank">
+      Agendar Horário
+    </a>
+  </div>
+  <img src="apresentacao.jpg" alt="Apresentação">
+</section>
 
-  <ul>
-    <li><a href="#apresentacao">Início</a></li>
-    <li><a href="#carnaval">Carnaval</a></li>
-    <li><a href="#kids">Kids</a></li>
-    <li><a href="#premium">Premium</a></li>
-    <li><a href="#social">Social</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</nav>
-
-<!-- APRESENTAÇÃO -->
-<section id="apresentacao">
-  <h1>Beauty & Shine Studio</h1>
-
-  <div class="grid grid-2">
-    <img src="assets/apresentacao.jpg" alt="Apresentação">
-
+<section>
+  <h2>Especial de Carnaval</h2>
+  <div class="cards">
     <div class="card">
-      <p>
-        Sou <strong>Joyce Fernandes</strong>, maquiadora profissional especializada
-        em maquiagem social, artística, kids, carnaval e penteados.
-      </p>
-
-      <a class="btn" href="https://wa.me/558499125959" target="_blank">
-        Agendar Horário
-      </a>
+      <img src="carnaval1.jpg">
+      <div class="card-content">
+        <p>Maquiagem artística com brilho e resistência.</p>
+        <p class="price">R$ 80,00 • 1h</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CARNAVAL -->
-<section id="carnaval">
-  <h2>Especial Carnaval</h2>
-
-  <div class="grid grid-2">
+<section>
+  <h2>Carnaval Kids</h2>
+  <div class="cards">
     <div class="card">
-      <img src="assets/carnaval1.jpg">
-      <p><strong>Carnaval Glow</strong><br>R$ 80</p>
+      <img src="premium1.jpg">
+      <div class="card-content">
+        <p>maquiagem simples e elegante.</p>
+        <p class="price">R$ 50,00 • 1h30</p>
+      </div>
     </div>
 
     <div class="card">
-      <img src="assets/carnaval2.jpg">
-      <p><strong>Carnaval Artístico</strong><br>R$ 100</p>
-    </div>
-  </div>
-</section>
-
-<!-- KIDS -->
-<section id="kids">
-  <h2>Maquiagem Kids – Carnaval</h2>
-
-  <div class="grid grid-2">
-    <div class="card">
-      <img src="assets/kids1.jpg">
-      <p>Maquiagem infantil segura, divertida e delicada.</p>
-
-      <a class="btn btn-kids" href="https://wa.me/558499125959" target="_blank">
-        🎉 Agendar Maquiagem Kids
-      </a>
-    </div>
-
-    <div class="card">
-      <img src="assets/kids2.jpg">
-      <p>Atendimento com carinho e produtos próprios para crianças.</p>
-
-      <a class="btn btn-kids" href="https://wa.me/558499125959" target="_blank">
-        🎨 Garantir Horário
-      </a>
+      <img src="premium2.jpg">
+      <div class="card-content">
+        <p>Maquiagem lucida e segura.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PREMIUM -->
-<section id="premium">
-  <h2>Premium • Maquiagem & Penteados</h2>
-
-  <div class="grid grid-2">
+<section>
+  <h2>Penteados</h2>
+  <div class="cards">
     <div class="card">
-      <img src="assets/premium1.jpg">
-      <p>Maquiagem Premium<br><strong>R$ 90</strong></p>
+      <img src="penteado1.jpg">
+      <div class="card-content">
+        <p>Penteados modernos e clássicos.</p>
+        <p class="price">R$ 80,00</p>
+      </div>
     </div>
 
     <div class="card">
-      <img src="assets/premium2.jpg">
-      <p>Penteados Profissionais<br><strong>R$ 90</strong></p>
+      <img src="penteado2.jpg">
+      <div class="card-content">
+        <p>Finalização elegante e durável.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SOCIAL -->
-<section id="social">
+<section>
+  <h2>Premium </h2>
+  <div class="cards">
+    <div class="card">
+      <img src="kids1.jpg">
+      <div class="card-content">
+        <p>produção sofisticada e produção impecavel
+        .</p>
+        <p class="price">R$ 130,00 • 30 min</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
   <h2>Maquiagem Social</h2>
-
-  <div class="grid grid-2">
+  <div class="cards">
     <div class="card">
-      <img src="assets/social1.jpg">
-      <p>Eventos & Festas<br><strong>R$ 90</strong></p>
-    </div>
-
-    <div class="card">
-      <img src="assets/social2.jpg">
-      <p>Ensaios & Aniversários<br><strong>R$ 90</strong></p>
+      <img src="social1.jpg">
+      <div class="card-content">
+        <p>Eventos, festas e ensaios.</p>
+        <p class="price">R$ 80,00 • 1h</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CONTATO -->
-<section id="contato">
-  <h2>Contato & Localização</h2>
-
-  <div class="grid grid-2">
-    <img src="assets/contato.jpg">
-
-    <div class="card">
+<section>
+  <h2>Contato</h2>
+  <div class="contact">
+    <img src="contato.jpg">
+    <div>
       <p>📍 Rua São Pedro, Nº 101</p>
-      <p>📲 <strong>+55 84 9912-5959</strong></p>
-      <p>📸 @beautyshine.studio</p>
-
+      <p>📲 WhatsApp: +55 84 9912-5959</p>
+      <p>📸 Instagram: @beautyshine.studio</p>
+      <br>
       <a class="btn" href="https://wa.me/558499125959" target="_blank">
-        Falar no WhatsApp
+        Entrar em Contato
       </a>
     </div>
   </div>
 </section>
 
 <footer>
-  Beauty & Shine Studio • Joyce Fernandes
+  <p>Beauty & Shine Studio • Joyce Fernandes</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/558499125959" target="_blank">
-  WhatsApp
+<a class="whatsapp-float" href="https://wa.me/558499125959" target="_blank">
+  Agendar
 </a>
 
 </body>
